@@ -1,0 +1,47 @@
+.tweet {
+  margin-top: 40px;
+  border: 3px solid black;
+  padding: 25px;
+}
+
+.tweet:hover {
+  box-shadow: 7px 7px 5px grey;
+}
+
+.articleHead {
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.marginRight {
+  margin-right: 10px;
+}
+
+.hiddenName {
+  display: none;
+} 
+
+.tweet:hover .hiddenName {
+  display: block;
+}
+
+/* .tweet:hover {
+  box-shadow: 7px 7px 5px grey;
+} */
+
+hr {
+  height: 3px;
+  background-color: black;
+}
+
+.footContent {
+  font-size: 20px;
+  display: flex;
+  flex-basis: 75em;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+

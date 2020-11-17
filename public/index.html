@@ -1,29 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;700&display=swap"
+    rel="stylesheet">
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-  </head>
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-  </body>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script src="https://kit.fontawesome.com/00423a3f1e.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+</head>
+
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <div class="leftMenu">tweeter</div>
+    <div class="rightMenu">
+      <span> <span class="bold">Write</span> a new Tweet</span>
+      <i class="rightMenuArrow fas fa-angle-double-down"></i>
+    </div>
+  </nav>
+  <header class="headerTop">
+    <div>
+      <img class="img" src="/images/profile-hex.png">
+    </div>
+    <h2>Your Name</h2>
+    </div>
+  </header>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+
+    <section id="new-tweet">
+      <form id="tweet-form" action="/tweets" method="POST">
+        <textarea name="text" placeholder="What are you humming about?"></textarea>
+        <div class="form-info">
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </div>
+      </form>
+    </section>
+   
+    <section id="tweets-container">
+      <article class="tweet">
+        <header class="articleHead">
+          <div class="articleHead">
+            <img class="marginRight" src="https://i.imgur.com/nlhLi3I.png" alt="abc">
+            <p>Newton</p>
+          </div>
+          <div class="hiddenName">
+            <p>@SirIsaac</p>
+          </div>
+        </header>
+
+        <body>
+          <p>If I have seen further it is by standing on the shoulders of giants</p>
+        </body>
+        <hr />
+        <footer>
+          <div class="footContent">
+            <a>10 days ago</a>
+            <a>links</a>
+          </div>
+        </footer>
+      </article>
+    </section>
+    
+
+  </main>
+
+</body>
+
 </html>

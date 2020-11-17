@@ -1,0 +1,13 @@
+.headerTop {
+  background-color: #c4a300;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  margin: 120px 0 0 0;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+}

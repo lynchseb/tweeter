@@ -23,7 +23,9 @@ const db = require("./lib/in-memory-db");
 const DataHelpers = require("./lib/data-helpers.js")(db);
 
 // Update the dates for the initial tweets (data-files/initial-tweets.json).
-require("./lib/date-adjust")();
+
+// Commented out date-adjust on request of owner due to bug.
+// require("./lib/date-adjust")();
 
 // The `tweets-routes` module works similarly: we pass it the `DataHelpers` object
 // so it can define routes that use it to interact with the data layer.
@@ -35,3 +37,7 @@ app.use("/tweets", tweetsRoutes);
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
+
+// document.addEventListener("dblclick", (event) => {
+//   console.log(event);
+// });

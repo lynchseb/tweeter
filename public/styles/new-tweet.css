@@ -1,0 +1,71 @@
+/* #new-tweet {
+  display: none;
+} */
+
+#new-tweet {
+  padding-top: 25px;
+}
+
+textarea {
+  width: 100%;
+  background-color: #f4f1ec;
+  border: none;
+  border-bottom: 3px solid black; 
+  resize: none;
+  font-weight: 700;
+ 
+}
+
+textarea::placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.form-info input:focus {
+  outline: none;
+}
+
+.form-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-info input {
+  font-family: "Bungee", sans-serif;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.form-info span {
+  font-family: "Bungee", sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+
+/* .tweetWrapper {
+  word-wrap: break-word;
+}
+
+.alert {
+  margin-top: 25px;
+  padding: 10px;
+  border: 5px solid red;
+  color: red;
+  display: none;
+}
+
+.flexAlert {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert h3 {
+  margin: 0;
+} */
+

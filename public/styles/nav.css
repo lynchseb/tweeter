@@ -1,0 +1,46 @@
+nav {
+
+  height: 120px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* z-index: 10; */
+  background-color: #4056A1;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: flex-start;
+  flex-grow: 1; */
+  padding: 1.5em;
+
+}
+
+.leftMenu {
+font-family: "Bungee", sans-serif;
+}
+
+.rightMenu {
+display: flex;
+flex-direction: column;
+font-family: 'Source Sans Pro', sans-serif;
+/* font-weight: bold; */
+}
+
+
+.rightMenuArrow{
+margin: 10px;
+text-align: center;
+cursor: pointer;
+animation: heyjump 2s infinite;
+color: red;
+}
+
+@keyframes heyjump {
+0%{transform: translateY(0px);}
+50%{transform: translateY(-5px)}
+}
+
+.bold {
+  font-weight: 700;
+  }

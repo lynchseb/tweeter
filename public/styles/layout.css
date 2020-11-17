@@ -14,12 +14,27 @@ html {
  * Global layout stuff
  */
 
+
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+main {
+  display: flex; 
+  flex-direction: column;
+  align-content: center;
+}
+ .container {
+  width: 90%;
+  margin: auto;
+  background-color: #f4f1ec;
+  max-width: 100%;
+  overflow: scroll;
+}
