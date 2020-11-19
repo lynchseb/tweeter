@@ -2,8 +2,9 @@
   display: none;
 } */
 
-#new-tweet {
-  padding-top: 25px;
+.new-tweet {
+  padding-top: 15px;
+  display: none;
 }
 
 textarea {
@@ -50,7 +51,7 @@ textarea:focus {
 
 /* .tweetWrapper {
   word-wrap: break-word;
-}
+} */
 
 .alert {
   margin-top: 25px;
@@ -67,5 +68,5 @@ textarea:focus {
 
 .alert h3 {
   margin: 0;
-} */
+} 
 

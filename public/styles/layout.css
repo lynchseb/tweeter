@@ -30,11 +30,23 @@ main {
   display: flex; 
   flex-direction: column;
   align-content: center;
-}
- .container {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   background-color: #f4f1ec;
-  max-width: 100%;
-  overflow: scroll;
+  
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  color: blue;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  outline: none;
 }

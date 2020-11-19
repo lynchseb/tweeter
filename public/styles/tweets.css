@@ -1,3 +1,6 @@
+.tweets-container {
+  width: 90%;
+}
 .tweet {
   margin-top: 40px;
   border: 3px solid black;
@@ -16,6 +19,9 @@
   flex-direction: row;
 }
 
+.tweetContent {
+  word-wrap: break-word;
+}
 .marginRight {
   margin-right: 10px;
 }
@@ -28,10 +34,6 @@
   display: block;
 }
 
-/* .tweet:hover {
-  box-shadow: 7px 7px 5px grey;
-} */
-
 hr {
   height: 3px;
   background-color: black;
@@ -40,8 +42,6 @@ hr {
 .footContent {
   font-size: 20px;
   display: flex;
-  flex-basis: 75em;
-  flex-grow: 1;
   justify-content: space-between;
 }
 
