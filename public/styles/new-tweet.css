@@ -59,6 +59,7 @@ textarea:focus {
   border: 5px solid red;
   color: red;
   display: none;
+  width: 80%;
 }
 
 .flexAlert {

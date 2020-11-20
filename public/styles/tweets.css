@@ -43,5 +43,10 @@ hr {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.footContent:hover {
+  font-weight: 700;
 }
 

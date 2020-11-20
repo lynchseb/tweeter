@@ -13,7 +13,7 @@ const dayConverter = function(milliseconds) {
   const date = {days, hours, minutes};
   return date;
 };
-console.log(dayConverter(1461116232227))
+console.log("Days since", dayConverter(1461116232227))
 
 const escape =  function(str) {
   let div = document.createElement('div');
@@ -48,12 +48,12 @@ const createTweetElement = function(tweet) {
   <hr />
   <footer>
     <div class="footContent">
-      <a>${days} days ago</a>
-      <a>
+      <span>${days} days ago</span>
+      <span>
       <i class="fas fa-flag"></i>
       <i class="fas fa-retweet"></i>
       <i class="fas fa-heart"></i>
-      <a/>
+      <span/>
     </div>
   </footer>
 </article>`); 
@@ -132,13 +132,13 @@ $(document).ready(function() {
       $(".alert").slideDown('slow');
       setTimeout(function(){
          $(".alert").slideUp('slow');
-       }, 3000)
+       }, 8000)
     } else if (isTweetNotValid(message)){
       $(".alert h3").text("Not a valid Tweet");
       $(".alert").slideDown('slow');
       setTimeout(function(){
         $(".alert").slideUp('slow');
-      }, 3000)
+      }, 8000)
     } else {
       $.ajax({
         type: 'POST',
