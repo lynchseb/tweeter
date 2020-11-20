@@ -13,14 +13,15 @@ const dayConverter = function(milliseconds) {
   const date = {days, hours, minutes};
   return date;
 };
-console.log("Days since", dayConverter(1461116232227))
 
+// Cross-scripting protection
 const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 }
 
+// Tweet display
 const renderTweets = function(data){
   $(".tweets-container").empty();
   data.forEach((tweets) => {
@@ -29,6 +30,7 @@ const renderTweets = function(data){
   })
 }
 
+//Tweet Generator
 const createTweetElement = function(tweet) {
   let conversion = dayConverter(tweet.created_at)
   let { days } = conversion;
@@ -59,6 +61,7 @@ const createTweetElement = function(tweet) {
 </article>`); 
 }
 
+//Tweet loader
 const loadTweets = function() {
   $.ajax({
     url: '/tweets',
@@ -69,14 +72,15 @@ const loadTweets = function() {
   })
 }
 
+//Tweet authentification
 const isTweetTooLong = function(message) {
 return message.length > 140;
 }
-
 const isTweetNotValid = function(message) {
  return message === "";
 }
 
+//SrollTop Button
 const scrollTop = () => {
   $(window).scroll(function() {
    if ($(this).scrollTop() > 300) {
@@ -101,12 +105,14 @@ const scrollTop = () => {
  });
 }
 
+//NavBar interface
 const navBarToggle = () => {
   $(".rightMenuArrow").click(function() {
     $(".new-tweet").toggle("slow");
     $("textarea").focus();
   });
 }
+
 //Main Document
 $(document).ready(function() {
  console.log("ready!");
@@ -154,6 +160,7 @@ $(document).ready(function() {
       })
     }
   })
+  
 // Call functions on Document.ready
 loadTweets();
 scrollTop();

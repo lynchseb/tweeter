@@ -4,16 +4,12 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  /* z-index: 10; */
   background-color: #4056A1;
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: flex-start;
-  flex-grow: 1; */
   padding: 1.5em;
-
 }
 
 .leftMenu {
