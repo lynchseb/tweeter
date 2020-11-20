@@ -6,10 +6,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Error Message"](https://github.com/lynchseb/tweeter/blob/master/docs/ErrorMessage.png?raw=true)
-!["Main Page"](https://github.com/lynchseb/tweeter/blob/master/docs/mainPage.png?raw=true)
-!["Responsive Counter"](https://github.com/lynchseb/tweeter/blob/master/docs/responsiveCounterShot.png?raw=true)
-!["Responsive"](https://github.com/lynchseb/tweeter/blob/master/docs/responsiveShot.png?raw=true)
+!["Front Page"](https://github.com/lynchseb/tweeter/blob/master/docs/Frontpage.png?raw=true)
+!["New Tweet"](https://github.com/lynchseb/tweeter/blob/master/docs/NewTweet.png?raw=true)
+!["Invalid Tweet"](https://github.com/lynchseb/tweeter/blob/master/docs/Notvalidtweet.png?raw=true)
+!["Responsive Counter Too Long"](https://github.com/lynchseb/tweeter/blob/master/docs/ToolongCharCounter.png?raw=true)
 
 ## Getting Started
 
